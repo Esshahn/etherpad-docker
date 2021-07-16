@@ -1,0 +1,10 @@
+services:
+  - name: etherpad
+    type: web
+    env: docker
+    region: frankfurt
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    dockerContext: ./
+    branch: main
+    healthCheckPath: /
